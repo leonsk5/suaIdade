@@ -1,7 +1,7 @@
 
 """Programa para gerar qual a idade do usuario"""
 #Ano atual
-dtAno = intput('Digite o Ano atual: ')
+dtAno = input('Digite o Ano atual: ')
 if dtAno.isspace() or dtAno.isalpha():
     pirnt('Caracteres incorretos!')
     
