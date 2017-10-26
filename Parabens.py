@@ -1,18 +1,24 @@
+
 """Programa para gerar qual a idade do usuario"""
 #Ano atual
-anoAtual = 2017
-
-#Aqui coleta a data de nascimento do usuario
-dataNas = int(input("Digite o ano do seu nascimento:"))
-
+dtAno = intput('Digite o Ano atual: ')
+if dtAno.isspace() or dtAno.isalpha():
+    pirnt('Caracteres incorretos!')
+    
+#Aqui coleta o ano de nascimento do usuario
+dtNas = input("Digite o ano do seu nascimento:")
+if dtNas.isspace() or dtNas.salpha():    
+   pirnt('Caracteres incorretos!')
+    
 #Calculo para gerar a idade
-anos = (anoAtual - dataNas)
-print("Você tem " + str(anos) + " Anos!")
+idade = int(dtAno) - int(dtNas)
+
+print('Você tem {} Anos!'.format(idade))
 
 #condições para gerar maior idade ou não
-if anos < 18:
+if idade < 18:
     print ("Você é de menor!")
-elif(dataNas == 0):
+elif(dtNas >= 0000):
     print ("Data de nascimento não é valido!")
 else:
     print("Você é de maior!")
